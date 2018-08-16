@@ -7,5 +7,5 @@ var app = express();
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname,'../public')));
 
-const port = process.env_PORT || 3000;
-app.listen(port , () => console.log(`listening on port ${port}`));
+const port = process.env.PORT || 3000;
+app.listen(port,() => console.log(`listening on port ${port}`));
